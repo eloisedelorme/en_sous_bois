@@ -1,0 +1,125 @@
+body {
+    position:relative;
+    /* background-color:#FFF6E3; */
+    font-family: Lato, sans-serif;
+    margin-top: -25px;
+}
+
+header {
+    top: 1px;
+}
+.navbar{
+    /* background-color:#FFF6E3; */
+    flex-wrap: nowrap;
+    background-color: rgba(255, 255, 255, 0.36);
+}
+.navbar-brand {
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: Lato, sans-serif;
+    color: #f37506;
+}
+
+.navbar-toggler {
+    border:#FFF6E3;
+    color: #f37506;
+    font: size 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.header__navbar--logo{
+    width: 50px;
+    height: auto;
+    padding: 10px;
+}
+
+.offcanvas {
+    font-family: 'Lato' , sans-serif;
+    color: #f37506;
+}
+.offcanvas-header .offcanvas-body {
+    padding:0;
+}
+
+.header__nav {
+    position: fixed;
+    z-index: 2;
+    font-family: Lato, sans-serif;
+    background-color: rgba(255, 255, 255, 0.36);
+}
+
+.title--logo {
+    width: 50px;
+}
+
+.title--text {
+    color:#e4070b;
+    font-family: Rubik bubbles , sans-serif;
+    font-size: 150%;
+    padding-top: 5%;
+}
+
+
+h1 {
+    z-index: 1;;
+    width: 100%;
+    color:white;
+    font-family: Rubik bubbles , sans-serif;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase ;
+    font-family: Rubik bubbles , sans-serif;
+    font-size: 25px;
+}
+
+h3 {
+    color : white;
+    font-family: Rubik bubbles , sans-serif;
+    margin: 20px;
+
+}
+
+.accueil {
+    top:20%;
+}
+
+.champi {
+    top:1000px;
+    background-image: url(assets/photo-champignons-amanita-muscaria-dans-style-neon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comestible {
+    top:1000px;
+}
+
+footer {
+    background-image : url(assets/fraicheur-croissance-forestiere-automne-champignons-comestibles-dans-nature-generee-par-intelligence-artificielle\(1\).jpg)
+}
+.index__footer {
+    top : 1000px;
+}
+
+.event {
+    top:20%;
+}
+
+@media screen and (min-width: 780px) {
+    p  {
+        font-size: 20px;
+    }
+
+    h3 , h2 {
+        font-size: 30px;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+
+}
