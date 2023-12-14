@@ -86,3 +86,13 @@ h3 {
     top:20%;
 }
 
+.champi {
+    top:1000px;
+    background-image: url(assets/photo-champignons-amanita-muscaria-dans-style-neon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comestible {
+    top:1000px;
+}
