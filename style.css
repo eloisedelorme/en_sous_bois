@@ -1,17 +1,62 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-    position:relative;
-    /* background-color:#FFF6E3; */
-    font-family: Lato, sans-serif;
-    margin-top: -25px;
+    width: 100% ;
 }
 
-header {
-    top: 1px;
+ol, ul {
+	list-style: none;
 }
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/** Mon css **/
+
 .navbar{
-    /* background-color:#FFF6E3; */
+    background-color:#FFF; 
     flex-wrap: nowrap;
-    background-color: rgba(255, 255, 255, 0.36);
+    position: fixed;
+    width: 100%;
+    z-index: 4;
 }
 .navbar-brand {
     font-weight: bolder;
@@ -37,8 +82,13 @@ header {
     font-family: 'Lato' , sans-serif;
     color: #f37506;
 }
+
 .offcanvas-header .offcanvas-body {
     padding:0;
+}
+
+.nav-item {
+    font-size: 15px;;
 }
 
 .header__nav {
@@ -59,7 +109,31 @@ header {
     padding-top: 5%;
 }
 
+/**Accueil **/
+
+.accueil {
+    text-align: center;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-image: url(assets/vue-champignons-dans-nature_23-2150706961.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.accueil__div {
+    margin-top : 20px;
+    justify-content: center;
+    width: fit-content;
+}
+
+
+
+/** Objectifs **/
+
 h1 {
+    margin-top: 50px;
     z-index: 1;;
     width: 100%;
     color:white;
@@ -79,41 +153,41 @@ h3 {
     color : white;
     font-family: Rubik bubbles , sans-serif;
     margin: 20px;
-
+    font-size: 25px;
 }
 
-.accueil {
-    top:20%;
+p , ul {
+    font-size: 20px;
 }
 
 .champi {
-    top:1000px;
     background-image: url(assets/photo-champignons-amanita-muscaria-dans-style-neon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.comestible {
-    top:1000px;
+.cartes {
+    margin-left : 5px;
 }
-
 
 footer {
     background-image : url(assets/fraicheur-croissance-forestiere-automne-champignons-comestibles-dans-nature-generee-par-intelligence-artificielle\(1\).jpg)
 }
-.index__footer {
-    top : 1000px;
+
+.event__header {
+    top: -50px;
 }
 
 .event {
-    top:20%;
+    padding-top: 20px;
+    background-image: url(assets/voyage-randonnee-concept-aventure-vue-arriere-jeunes-amis-se-serrant-coudes-regardant-lac-dans-belle-foret-automne.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
 }
 
-.event__header--img {
-    height: 100%;
-}
 
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 780px) {
     p  {
         font-size: 20px;
     }
@@ -130,5 +204,27 @@ footer {
         width: 100%;
     }
     
+}
 
+@media screen and (min-width: 992px) {
+    .navbar-toggler {
+        visibility: hidden;
+    }
+    p  {
+        font-size: 20px;
+    }
+
+    h3 , h2 {
+        font-size: 30px;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+
+    .event__header--img {
+        width: 100%;
+    }
+    
+    
 }
