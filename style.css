@@ -96,3 +96,11 @@ h3 {
 .comestible {
     top:1000px;
 }
+
+
+footer {
+    background-image : url(assets/fraicheur-croissance-forestiere-automne-champignons-comestibles-dans-nature-generee-par-intelligence-artificielle\(1\).jpg)
+}
+.index__footer {
+    top : 1000px;
+}
