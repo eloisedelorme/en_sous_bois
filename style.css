@@ -108,3 +108,27 @@ footer {
 .event {
     top:20%;
 }
+
+.event__header--img {
+    height: 100%;
+}
+
+@media screen and (min-width: 780px) {
+    p  {
+        font-size: 20px;
+    }
+
+    h3 , h2 {
+        font-size: 30px;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+
+    .event__header--img {
+        width: 100%;
+    }
+    
+
+}
