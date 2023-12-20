@@ -235,6 +235,9 @@ footer {
         font-size: 30px;
     }
  
+    .accueil__text {
+        margin : 100px;
+    }
 
     
 }
